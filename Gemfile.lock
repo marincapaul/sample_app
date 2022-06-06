@@ -68,6 +68,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     aws-eventstream (1.2.0)
     aws-partitions (1.594.0)
     aws-sdk-core (3.131.1)
@@ -87,6 +89,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     byebug (11.0.1)
     capybara (3.37.1)
@@ -106,6 +111,7 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
     ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -195,6 +201,8 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.2.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -248,6 +256,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3 (= 1.46.0)
   bootsnap
+  bootstrap-sass (= 3.4.1)
   byebug (= 11.0.1)
   capybara
   debug
