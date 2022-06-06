@@ -43,7 +43,7 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
-    color: #777;
+    color: $gray-light;
 }
 
 p {
@@ -80,28 +80,28 @@ img{
 footer {
     margin-top: 45px;
     padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-top: 1px solid #eaeaea;
-    color: #777;
-}
+    color: $gray;
+    a {
+        color: #555;
+        &:hover{
+            color:#222;
+        }
+    }
 
-footer a {
-    color: #555;
-}
+    small{
+        float: left;
+    }
+    
+    ul{
+        float: right;
+        list-style: none;
+        li{
+            float: left;
+            margin-left: 15px;
+        }
+    }
 
-footer a:hover {
-    color:#222;
-}
-
-footer small {
-    float: left;
-}
-
-footer ul {
-    float: right;
-    list-style: none;
-}
-
-footer ul li {
-    float: left;
-    margin-left: 15px;
 }
