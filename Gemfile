@@ -62,7 +62,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
-  gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', '~> 11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
