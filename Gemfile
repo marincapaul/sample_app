@@ -7,7 +7,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+# gem "sprockets-rails"
 
 
 
@@ -26,14 +26,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# gem 'mini_magick', '~>4.9.5'
+gem 'mini_magick', '4.9.5'
 # gem 'active_storage_validations', '0.8.2'
-# gem 'faker', '2.1.2'
-# gem 'will_paginate', '3.1.8'
-# gem 'bootstrap-will_paginate', '1.0.0'
-gem 'bootstrap-sass', '3.4.1'
-# gem 'webpacker', '4.0.7'
-# gem 'turbolinks', '5.2.0'
+gem 'faker',                      '2.11.0'
+gem 'will_paginate',              '3.3.0'
+gem 'bootstrap-will_paginate',    '1.0.0'
+gem 'bootstrap-sass',             '3.4.1'
+gem 'webpacker',                  '5.4.0'
+gem 'turbolinks',                 '5.2.1'
 
 
 # Use Redis adapter to run Action Cable in production
@@ -52,7 +52,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-#gem "sassc-rails"
+gem "sass-rails", '6.0.0'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -72,7 +72,7 @@ group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
- # gem 'listen', '~> 3.1.5'
+  gem 'listen',                '3.4.1'
   gem 'spring-watcher-listen', '2.0.1'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem "spring"
