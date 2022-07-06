@@ -40,7 +40,7 @@ Rails.application.configure do
   
   # Store uploaded files on Amazon AWS.
   config.active_storage.service = :amazon
-  
+
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
   # config.action_cable.url = "wss://example.com/cable"
@@ -67,15 +67,15 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'powerful-everglades-29571.herokuapp.com'
+  host = 'https://powerful-everglades-29571.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.sendgrid.net',
-    :port => '587',
-    :authentication => :plain,
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'heroku.com',
+    :address =>           'smtp.sendgrid.net',
+    :port =>              '587',
+    :authentication =>    :plain,
+    :user_name =>         ENV['SENDGRID_USERNAME'],
+    :password =>          ENV['SENDGRID_PASSWORD'],
+    :domain =>            'heroku.com',
     :enable_starttls_auto => true
   }
   
