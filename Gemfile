@@ -10,7 +10,8 @@ gem "rails", "~> 7.0.3"
 # gem "sprockets-rails"
 
 
-
+gem "image_processing",   '1.9.3'
+gem 'mini_magick',        '4.9.5'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -26,14 +27,16 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem 'mini_magick', '4.9.5'
-# gem 'active_storage_validations', '0.8.2'
+
+gem 'active_storage_validations', '0.8.9'
 gem 'faker',                      '2.11.0'
 gem 'will_paginate',              '3.3.0'
 gem 'bootstrap-will_paginate',    '1.0.0'
 gem 'bootstrap-sass',             '3.4.1'
 gem 'webpacker',                  '5.4.0'
 gem 'turbolinks',                 '5.2.1'
+
+gem 'rubocop-faker'
 
 
 # Use Redis adapter to run Action Cable in production
@@ -54,8 +57,6 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sass-rails", '6.0.0'
 
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -84,11 +85,11 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'rails-controller-testing'
-  # gem 'rails-controller-testing', '1.0.4'
-  # gem 'minitest', '~> 5.11.3'
-  # gem 'minitest-reporters', '~> 1.3.8'
-  # gem 'guard', '2.15.0'
-  # gem 'guard-minitest', '2.4.6'
+
+  gem 'minitest', '~> 5.11.3'
+  gem 'minitest-reporters', '~> 1.3.8'
+  gem 'guard', '2.16.2'
+  gem 'guard-minitest', '2.4.6'
 
 end
 
@@ -98,3 +99,4 @@ group :production do
 end
 
 gem 'tzinfo-data', '~> 1.2021', '>= 1.2021.5'
+
