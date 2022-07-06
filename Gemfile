@@ -95,7 +95,8 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
-  gem 'aws-sdk-s3', '~> 3', require: false
+  # gem 'aws-sdk-s3', '1.48.0', require: false
+  gem 'aws-sdk', '~> 3', require: false
 end
 
 gem 'tzinfo-data', '~> 1.2021', '>= 1.2021.5'
