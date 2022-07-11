@@ -13,6 +13,9 @@ module SampleApp
     config.active_storage.variant_processor = :vips
     config.load_defaults 7.0
 
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
+
     #config.active_storage.variant_processor = :mini_magick
     # Configuration for the application, engines, and railties goes here.
     #
